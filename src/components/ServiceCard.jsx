@@ -4,10 +4,13 @@ export default function ServiceCard({ item, index }) {
     const color = colors[index];
     console.log(color, index);
     return (
-        <div className="  flex flex-col items-start justify-center p-10 rounded-md" style={{ backgroundColor: color }}>
-            <img src={item.imageUrl} alt="card-logo"/>
-            <h2 className="text-xl font-bold">{item.title}</h2>
-            <p className="text-xs mt-3">{item.description}</p>
+        <div
+            className="flex flex-col items-start justify-center h-56 px-10 transition duration-500 ease-in-out transform rounded-md shadow-lg cursor-pointer md:h-72 hover:scale-105"
+            style={{ backgroundColor: color }}
+        >
+            <img src={item.imageUrl} alt="card-logo" />
+            <h2 className="mt-3 text-xl font-bold">{item.title}</h2>
+            <p className="mt-3 text-xs">{item.description}</p>
         </div>
     );
 }
