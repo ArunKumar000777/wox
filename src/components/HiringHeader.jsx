@@ -4,7 +4,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 export default function HiringHeader() {
     return (
-        <div className="bg-secondary h-10 text-text_white flex justify-between">
+        <div className="bg-secondary h-10 text-text_white flex justify-between px-8">
             <div className="flex items-center gap-x-2">
                 <b className="text-sm">Now Hiring : </b>
                 <p className="text-sm"> Looking for a job in Full Stack Development?</p>
